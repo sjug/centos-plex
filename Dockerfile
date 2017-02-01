@@ -1,5 +1,8 @@
 FROM centos:7
 
+ENV TERM="xterm" LANG="en_US.UTF-8" LC_ALL="en_US.UTF-8"
+RUN localedef -f UTF-8 -i en_US en_US.UTF-8
+
 RUN \
 # Update and get dependencies
     yum update -y && \

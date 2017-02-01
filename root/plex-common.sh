@@ -37,6 +37,6 @@ function installFromRawUrl {
     exit 1
   fi
 
-  yum --nogpgcheck localinstall /tmp/plexmediaserver.rpm
+  yum --nogpgcheck localinstall -y /tmp/plexmediaserver.rpm
   rm -f /tmp/plexmediaserver.rpm
 }
